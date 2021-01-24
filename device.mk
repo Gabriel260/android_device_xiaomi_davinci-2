@@ -23,6 +23,9 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 # Call the proprietary setup
 $(call inherit-product, vendor/xiaomi/davinci/davinci-vendor.mk)
 
+# ANXCamera
+$(call inherit-product, vendor/aeonax/ANXCamera/anx-vendor.mk)
+
 # Additional native libraries
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
@@ -303,8 +306,12 @@ PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
 
 # Power
 PRODUCT_PACKAGES += \
+<<<<<<< HEAD
     android.hardware.power@1.3-service.sm6150-libperfmgr \
     powerhint.json
+=======
+    android.hardware.power-service-qti
+>>>>>>> 4154f97 (davinci: it's ANXCamera time)
 
 # Product characteristics
 PRODUCT_CHARACTERISTICS := nosdcard
