@@ -446,7 +446,3 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BOOT_JARS += \
     WfdCommon
-
-# ViPER4AndroidFX
-PRODUCT_PACKAGES += \
-    ViPER4AndroidFX
