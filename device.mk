@@ -306,12 +306,8 @@ PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
 
 # Power
 PRODUCT_PACKAGES += \
-<<<<<<< HEAD
     android.hardware.power@1.3-service.sm6150-libperfmgr \
     powerhint.json
-=======
-    android.hardware.power-service-qti
->>>>>>> 4154f97 (davinci: it's ANXCamera time)
 
 # Product characteristics
 PRODUCT_CHARACTERISTICS := nosdcard
